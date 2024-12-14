@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 
-
+.blogheading{
+  color: #0c0a09;
+}
 * {
   padding: 0;
   margin: 0;
@@ -78,10 +80,11 @@
 }
 
 .blogheader {
-  background-image: url("../images/landing/header.jpg");
+  background-image: url("https://img.freepik.com/free-photo/executive-touching-icon-social-network_1232-158.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1719360000&semt=sph");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .blognav {
@@ -179,6 +182,9 @@
   border-radius: 10px;
   transform: translateY(-50%);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.buildfeacture{
+  color: black !important;
 }
 
 .bloginput__group {
@@ -307,7 +313,7 @@
 }
 
 .service {
-  background-image: url("../images/landing/service.jpg");
+  background-image: url("https://jobscoverletters.com/wp-content/uploads/2024/03/JobsCoverLetters-Its-never-too-late-to-start-chasing-your-dreams.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -407,7 +413,7 @@
   display: grid;
   grid-template-columns:
     minmax(1rem, 1fr) minmax(0, 1200px) minmax(1rem, 1fr);
-  background-image: url("../images/landing/explore.jpg");
+  background-image: url("https://us.123rf.com/450wm/garagestock/garagestock1701/garagestock170125993/69296458-technology-internet-teamwork-job-concept.jpg?ver=6");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../landing.css";
-import logo from "../../images/landing/logo.png";
-import about from "../../images/landing/about.jpg";
-import room1 from "../../images/landing/room-1.jpg";
-import room2 from "../../images/landing/room-2.jpg";
-import room3 from "../../images/landing/room-3.jpg";
+import logo from "../../images/logo-full.png";
+import about from "../../images/landing/Job-recruitment.jpg";
+import job1 from "../../images/landing/job-1.jpg";
+import job2 from "../../images/landing/job-2.jpg";
+import job3 from "../../images/landing/job-3.jpg";
 import facebook from "../../images/landing/facebook.png";
 import instagram from "../../images/landing/instagram.png";
 import youtube from "../../images/landing/youtube.png";
@@ -85,14 +85,16 @@ const Landing = () => {
               </a>
             </li>
           </ul>
-          <button onClick={handleLoginClick} className="blogbtn nav__btn">Login</button>
+          <button onClick={handleLoginClick} className="blogbtn nav__btn">
+            Login
+          </button>
         </nav>
         <div className="blogsection__container blogheader__container" id="home">
-          <p>Simple - Unique - Friendly</p>
+          <p>Empowering Careers - Connecting Futures</p>
           <h1>
-            Make Yourself At Home
+            <span className="buildfeacture">Build Your Future</span>
             <br />
-            In Our <span>Hotel</span>.
+            With Our <span>Placement Services</span>.
           </h1>
         </div>
       </header>
@@ -100,33 +102,33 @@ const Landing = () => {
         <form action="/" className="blogbooking__form">
           <div className="bloginput__group">
             <span>
-              <i className="ri-calendar-2-fill"></i>
+              <i className="ri-map-pin-fill"></i>
             </span>
             <div>
-              <label for="check-in">CHECK-IN</label>
-              <input type="text" placeholder="Check In" />
+              <label for="location">LOCATION</label>
+              <input type="text" placeholder="Location" />
             </div>
           </div>
           <div className="bloginput__group">
             <span>
-              <i className="ri-calendar-2-fill"></i>
+              <i className="ri-book-fill"></i>
             </span>
             <div>
-              <label for="check-out">CHECK-OUT</label>
-              <input type="text" placeholder="Check Out" />
+              <label for="subject">SUBJECT</label>
+              <input type="text" placeholder="Subject" />
             </div>
           </div>
           <div className="bloginput__group">
             <span>
-              <i className="ri-user-fill"></i>
+              <i className="ri-graduation-cap-fill"></i>
             </span>
             <div>
-              <label for="guest">GUEST</label>
-              <input type="text" placeholder="Guest" />
+              <label for="teaching-level">TEACHING-LEVEL</label>
+              <input type="text" placeholder="Teaching-level" />
             </div>
           </div>
           <div className="input__group input__btn">
-            <button className="blogbtn">CHECH OUT</button>
+            <button className="blogbtn">SEARCH</button>
           </div>
         </form>
       </section>
@@ -136,12 +138,13 @@ const Landing = () => {
         </div>
         <div className="about__content">
           <p className="section__subheader">ABOUT US</p>
-          <h2 className="section__header">The Best Holidays Start Here!</h2>
+          <h2 className="section__header">Your Career Journey Starts Here!</h2>
           <p className="section__description">
-            With a focus on quality accommodations, personalized experiences,
-            and seamless booking, our platform is dedicated to ensuring that
-            every traveler embarks on their dream holiday with confidence and
-            excitement.
+            Our platform is dedicated to providing exceptional job placement
+            services for college students and recent graduates.Whether you're a
+            student looking for internships or a graduate seeking your first
+            job, we offer personalized support to help you take the next step in
+            your professional journey.
           </p>
           <div className="about__btn">
             <button className="blogbtn">Read More</button>
@@ -150,90 +153,60 @@ const Landing = () => {
       </section>
 
       <section className="blogsection__container room__container">
-        <p className="section__subheader">OUR LIVING ROOM</p>
+        <p className="section__subheader">OUR PLACEMENT CELL</p>
         <h2 className="section__header">
-          The Most Memorable Rest Time Starts Here.
+          Bridging Education and Employment...
         </h2>
         <div className="room__grid">
           <div className="room__card">
             <div className="room__card__image">
-              <img className="blogimage" src={room1} alt="room" />
+              <img className="blogimage" src={job1} alt="room" />
               <div className="room__card__icons">
-                <span>
-                  <i className="ri-heart-fill"></i>
-                </span>
-                <span>
-                  <i className="ri-paint-fill"></i>
-                </span>
                 <span>
                   <i className="ri-shield-star-line"></i>
                 </span>
               </div>
             </div>
             <div className="room__card__details">
-              <h4>Deluxe Ocean View</h4>
+              <h4>On-Campus Recruitment</h4>
               <p>
-                Bask in luxury with breathtaking ocean views from your private
-                suite.
+                Regularly organized campus recruitment drives where top
+                companies visit to hire our students.
               </p>
-              <h5>
-                Starting from <span>$299/night</span>
-              </h5>
-              <button className="blogbtn">Book Now</button>
             </div>
           </div>
           <div className="room__card">
             <div className="room__card__image">
-              <img className="blogimage" src={room2} alt="room" />
+              <img className="blogimage" src={job2} alt="room" />
               <div className="room__card__icons">
-                <span>
-                  <i className="ri-heart-fill"></i>
-                </span>
-                <span>
-                  <i className="ri-paint-fill"></i>
-                </span>
                 <span>
                   <i className="ri-shield-star-line"></i>
                 </span>
               </div>
             </div>
             <div className="room__card__details">
-              <h4>Executive Cityscape Room</h4>
+              <h4>Extensive Network</h4>
               <p>
-                Experience urban elegance and modern comfort in the heart of the
-                city.
+                We have strong ties with numerous companies, ensuring a wide
+                range of job opportunities for our students.
               </p>
-              <h5>
-                Starting from <span>$199/night</span>
-              </h5>
-              <button className="blogbtn">Book Now</button>
             </div>
           </div>
           <div className="room__card">
             <div className="room__card__image">
-              <img className="blogimage" src={room3} alt="room" />
+              <img className="blogimage" src={job3} alt="room" />
               <div className="room__card__icons">
-                <span>
-                  <i className="ri-heart-fill"></i>
-                </span>
-                <span>
-                  <i className="ri-paint-fill"></i>
-                </span>
                 <span>
                   <i className="ri-shield-star-line"></i>
                 </span>
               </div>
             </div>
             <div className="room__card__details">
-              <h4>Family Garden Retreat</h4>
+              <h4>Internship Opportunities</h4>
               <p>
-                Spacious and inviting, perfect for creating cherished memories
-                with loved ones.
+                Facilitation of internships that provide hands-on experience and
+                practical knowledge in students' fields of interest.
               </p>
-              <h5>
-                Starting from <span>$249/night</span>
-              </h5>
-              <button className="blogbtn">Book Now</button>
             </div>
           </div>
         </div>
@@ -267,7 +240,7 @@ const Landing = () => {
                 <span>
                   <i className="ri-map-2-line"></i>
                 </span>
-                Tourist Guide Support
+                Customer Support
               </li>
             </ul>
           </div>
@@ -277,16 +250,16 @@ const Landing = () => {
       <section className="blogsection__container banner__container">
         <div className="banner__content">
           <div className="banner__card">
-            <h4>25+</h4>
-            <p>Properties Available</p>
+            <h4>125+</h4>
+            <p>Organization Enrolled</p>
           </div>
           <div className="banner__card">
             <h4>350+</h4>
-            <p>Bookings Completed</p>
+            <p>Seekers Placed</p>
           </div>
           <div className="banner__card">
             <h4>600+</h4>
-            <p>Happy Customers</p>
+            <p>Job Requirement</p>
           </div>
         </div>
       </section>
@@ -297,7 +270,7 @@ const Landing = () => {
         <div className="explore__bg">
           <div className="explore__content">
             <p className="section__description">10th MAR 2023</p>
-            <h4>A New Menu Is Available In Our Hotel.</h4>
+            <h4>A New Jobs Are Available.</h4>
             <button className="blogbtn">Continue</button>
           </div>
         </div>
@@ -312,9 +285,8 @@ const Landing = () => {
               </a>
             </div>
             <p className="section__description">
-              Discover a world of comfort, luxury, and adventure as you explore
-              our curated selection of hotels, making every moment of your
-              getaway truly extraordinary.
+              We partner with a diverse range of Organizations across various
+              cities to offer a wide array of job opportunities..
             </p>
             <button className="blogbtn">Book Now</button>
           </div>
